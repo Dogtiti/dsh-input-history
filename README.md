@@ -1,6 +1,6 @@
-# dsh-plugin-composer-history
+# dsh-input-history
 
-[![npm](https://img.shields.io/npm/v/dsh-plugin-composer-history?label=npm&color=2f6fed)](https://www.npmjs.com/package/dsh-plugin-composer-history)
+[![npm](https://img.shields.io/npm/v/dsh-input-history?label=npm&color=2f6fed)](https://www.npmjs.com/package/dsh-input-history)
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![dsh](https://img.shields.io/badge/DSH-%5E0.2.1--0-2f6fed)](https://github.com/deepseek-ai/deepseek-harness)
 
@@ -33,12 +33,12 @@
 https://raw.githubusercontent.com/Dogtiti/dsh-plugin-composer-predict/main/market-index.json
 ```
 
-设置 → 插件 → 启用实验性市场 bundle → Discover → 添加上面的地址 → 安装 `dsh-plugin-composer-history`。
+设置 → 插件 → 启用实验性市场 bundle → Discover → 添加上面的地址 → 安装 `dsh-input-history`。
 
 **npm**
 
 ```bash
-npm i dsh-plugin-composer-history
+npm i dsh-input-history
 ```
 
 在 Plugins 页用「添加」填写包名。
@@ -46,7 +46,7 @@ npm i dsh-plugin-composer-history
 **本地目录**
 
 ```bash
-git clone https://github.com/Dogtiti/dsh-plugin-composer-history
+git clone https://github.com/Dogtiti/dsh-input-history
 ```
 
 Plugins → 添加 → 选择该目录。
@@ -76,7 +76,7 @@ Plugins → 添加 → 选择该目录。
 ```yaml
 - insert:
     - id: composer-history
-      name: 'dsh-plugin-composer-history'
+      name: 'dsh-input-history'
       config:
         limit: 50
 ```
@@ -140,7 +140,7 @@ node --test "test/*.test.mjs"
 | 插件 | 说明 |
 | --- | --- |
 | [dsh-plugin-composer-predict](https://github.com/Dogtiti/dsh-plugin-composer-predict) | 预测下一条指令并显示为占位文字，`Tab` 采纳 |
-| **dsh-plugin-composer-history**（本仓库） | 输入框中按 `↑` / `↓` 回填历史消息 |
+| **dsh-input-history**（本仓库） | 输入框中按 `↑` / `↓` 回填历史消息 |
 | [dsh-plugin-subagent-bridge](https://github.com/Dogtiti/dsh-plugin-subagent-bridge) | 让 Codex 通过本机 MCP 把 DSH 当 subagent 用（spawn / wait / followup），反向也能把任务派给 Codex |
 | [dsh-plugin-usage-panel](https://github.com/Dogtiti/dsh-plugin-usage-panel) | 在模型选择器旁显示供应商套餐额度余量（目前 GLM Coding Plan），点开是明细浮层 |
 | [dsh-plugin-provider-icons](https://github.com/Dogtiti/dsh-plugin-provider-icons) | 在模型名旁显示供应商品牌 logo（24 个厂商，支持前缀匹配） |
