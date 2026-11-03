@@ -6,7 +6,7 @@
  * because the Session log is the only source of truth for what was sent.
  */
 window.__ModuleLoader__.load({
-  id: 'dsh-plugin-composer-history',
+  id: 'dsh-input-history',
   factory(require) {
     const React = require('react')
     const h = React.createElement
