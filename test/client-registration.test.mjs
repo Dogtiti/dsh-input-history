@@ -51,7 +51,7 @@ function fakeClient() {
 }
 
 test('registers one composer dock entry beside the prediction row', () => {
-  assert.equal(registration.id, 'dsh-plugin-composer-history')
+  assert.equal(registration.id, 'dsh-input-history')
   const module = registration.factory((spec) => {
     assert.equal(spec, 'react')
     return React
